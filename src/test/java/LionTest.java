@@ -14,7 +14,7 @@ public class LionTest {
     Feline feline;
 
     @Test
-    public void lionConstructorInvalidSexThrowsException() throws Exception {
+    public void lionConstructorInvalidSexThrowsException() {
         Assert.assertThrows("Используйте допустимые значения пола животного - самей или самка",
                 Exception.class,
                 () -> {new Lion("asfdsdgaef", feline);}

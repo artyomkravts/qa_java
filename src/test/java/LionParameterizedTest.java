@@ -10,7 +10,7 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
 @RunWith(Parameterized.class)
-public class LionTestParameterized {
+public class LionParameterizedTest {
 
     @Rule public MockitoRule mockitoRule = MockitoJUnit.rule(); // Так подключаем мокито, если RunWith уже занят
 
@@ -20,7 +20,7 @@ public class LionTestParameterized {
     private String sex;
     private boolean expectedResult;
 
-    public LionTestParameterized(String sex, Feline feline, boolean expectedResult) throws Exception {
+    public LionParameterizedTest(String sex, Feline feline, boolean expectedResult) throws Exception {
         this.sex = sex;
         this.feline = feline;
         this.expectedResult = expectedResult;
