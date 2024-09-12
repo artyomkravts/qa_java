@@ -7,12 +7,13 @@ public class Alex extends Lion {
 
     private Feline feline;
 
-    public Alex(String sex, Feline feline) throws Exception {
+    public Alex(Feline feline) throws Exception {
         super("Самец", feline);
+        this.feline = feline;
     }
 
     public List<String> getFriends() {
-        return Arrays.asList("Gloria", "Melman", "Marty");
+        return Arrays.asList("Marty", "Gloria", "Melman");
     }
 
     public String getPlaceOfLiving() {
